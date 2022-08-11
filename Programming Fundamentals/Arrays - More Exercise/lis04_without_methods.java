@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class demo {
+public class lis04_without_methods {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -29,7 +29,7 @@ public class demo {
             }
             for (int j = i + 1; j < numbers.length; j++) {
 
-               // int index = lis.size() - 1;
+                // int index = lis.size() - 1;
                 if (lis.get(lis.size() - 1) < numbers[j]) {
                     lis.add(numbers[j]);
                     if (lis.size() == 2) { //see later
