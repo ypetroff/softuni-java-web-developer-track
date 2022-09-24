@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class test {
+public class RadioactiveMutantVampireBunnies10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -106,7 +106,7 @@ public class test {
     }
 
     private static boolean checkWinningCondition(char[][] layer, int row, int col) {
-        return row < 0 || row >= layer.length || col < 0 || col > layer[row].length;
+        return row < 0 || row >= layer.length || col < 0 || col >= layer[row].length;
     }
 
     private static boolean movePlayerUpOrDown(char[][] layer, int row, int col, int newRow) {
