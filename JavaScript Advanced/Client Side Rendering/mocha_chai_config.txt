@@ -1,0 +1,44 @@
+exporting file
+___________________________________________
+module.exports = function name;
+********************************************
+importing flie
+
+const function name Or other name = require('file location');
+=> see examples of file loc in VS code
+__________________________________________________________________________
+node.js assert
+
+const assert = require('assert').strict; 
+__________________________________________________________________________
+Initialise node.js project and install mocha and chai
+
+TERMINAL:
+npm init -y
+npm i mocha chai (installs the two frameworks at the same time)
+
+can be installed separetely also check -g ()global install for mocha
+
+
+package.json
+
+change
+"script" {        /// npm test will run all test in a folder test (we 			should create the folder)
+test: "mocha"
+}
+
+if we dont have test folder =>
+test: "mocha ./**/*/test.js" recursive up
+or
+test: "mocha ./*.test.js"
+or
+test: "mocha ./{,!(node_modules)/**}/*.test.js"
+
+
+Other  varriant to start unit tests is with debbug >> create json launch file file
+
+delete all data within the {} and add custom config =>
+Node.js mocha
+
+modify "tdd" to "bdd" and
+	"${workspeceFolder}/test" to "file"
