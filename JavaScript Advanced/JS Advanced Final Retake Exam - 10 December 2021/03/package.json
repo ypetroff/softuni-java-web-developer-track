@@ -1,1 +1,14 @@
-
+{
+  "name": "asd",
+  "version": "1.0.0",
+  "description": "ad",
+  "main": "asd",
+  "scripts": {
+    "test": "asd"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}
